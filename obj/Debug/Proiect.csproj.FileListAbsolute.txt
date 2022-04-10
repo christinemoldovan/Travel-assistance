@@ -14,7 +14,7 @@ C:\Users\chris\Documents\Facultate\SEM2\ProjectII\Proiect\obj\Debug\en\Proiect.r
 C:\Users\chris\Documents\Facultate\SEM2\ProjectII\Proiect\obj\Debug\yo-BJ\Proiect.resources.dll
 C:\Users\chris\Documents\Facultate\SEM2\ProjectII\Proiect\obj\Debug\Proiect.exe
 C:\Users\chris\Documents\Facultate\SEM2\ProjectII\Proiect\obj\Debug\Proiect.pdb
-C:\Users\chris\Documents\Facultate\SEM2\ProjectII\Proiect\bin\Debug\Tourism.mdf
-C:\Users\chris\Documents\Facultate\SEM2\ProjectII\Proiect\bin\Debug\Tourism_log.ldf
 C:\Users\chris\Documents\Facultate\SEM2\ProjectII\Proiect\obj\Debug\Proiect.RegisterForm.resources
 C:\Users\chris\Documents\Facultate\SEM2\ProjectII\Proiect\obj\Debug\Proiect.MenuForm.resources
+C:\Users\chris\Documents\Facultate\SEM2\ProjectII\Proiect\bin\Debug\Turism.mdf
+C:\Users\chris\Documents\Facultate\SEM2\ProjectII\Proiect\bin\Debug\Turism_log.ldf

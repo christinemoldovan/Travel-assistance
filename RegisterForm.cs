@@ -44,7 +44,7 @@ namespace Proiect
                 String password = textBox_newPassword.Text;
                 String passwordCheck = textBox_PasswordCheck.Text;
                 textBox_newUsername.MaxLength = 21;
-                String queryLogin = "SELECT * FROM Users WHERE UserName=@username AND Password=@password";
+                String queryLogin = "SELECT * FROM Users WHERE UserName=@username AND Password=@password COLLATE SQL_Latin1_General_CP1_CS_AS ";
                 String queryInsert = "INSERT INTO Users(UserName, Password) VALUES(@username, @password)";
 
 
@@ -53,7 +53,7 @@ namespace Proiect
                 {
                     try
                     {
-                        sqlConnection.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chris\Documents\Facultate\SEM2\ProjectII\Proiect\Tourism.mdf;Integrated Security=True";
+                        sqlConnection.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chris\Documents\Facultate\SEM2\ProjectII\Proiect\Turism.mdf;Integrated Security=True";
                         sqlConnection.Open();
                         SqlCommand cmdLogin = new SqlCommand(queryLogin, sqlConnection);
                         SqlDataAdapter sda = new SqlDataAdapter(cmdLogin);

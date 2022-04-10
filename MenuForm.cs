@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -38,9 +39,40 @@ namespace Proiect
            int nHeightEllipse
        );
 
+        DataSet dsDestinatii;
+        DataSet dsCazari;
+        DataSet dsUser;
         public MenuForm()
         {
             InitializeComponent();
+            dsDestinatii = new DataSet();
+            try
+            {
+                sqlConnection.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chris\Documents\Facultate\SEM2\ProjectII\Proiect\Turism.mdf;Integrated Security=True";
+
+                sqlConnection.Open();
+
+                SqlDataAdapter daDestinatii = new SqlDataAdapter("SELECT * FROM Destinatii", sqlConnection);
+                daDestinatii.Fill(dsDestinatii, "Destinatii");
+                foreach (DataRow dr in dsDestinatii.Tables["Destinatii"].Rows)
+                {
+                    String name = dr.ItemArray.GetValue(1).ToString();
+                    comboBox_Destinations.Items.Add(name);
+                    comboBox_DestinationAccomodation.Items.Add(name);
+                }
+               
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                Console.WriteLine(ex.Message);
+            }
+            sqlConnection.Close();
+          
+
+
+
         }
 
         public MenuForm(string username)
@@ -51,7 +83,10 @@ namespace Proiect
         private void MenuForm_Load(object sender, EventArgs e)
         {
             label_Welcome.Text = "";
-            label_Welcome.Text = "Welcome, " + Account.username + "!";
+           //de facut numele
+               
+                label_Welcome.Text = "Welcome, " + Account.username + "!";
+            
             panel_Dashboard.Visible = true;
             panel_Account.Visible = false;
             panel_Settings.Visible = false;
@@ -129,6 +164,7 @@ namespace Proiect
             panel_Dashboard.Visible = true;
             panel_Account.Visible = false;
             panel_Settings.Visible = false;
+            panel_Destinations.Visible = false;
 
         }
 
@@ -137,6 +173,8 @@ namespace Proiect
             panel_Dashboard.Visible = false;
             panel_Account.Visible = true;
             panel_Settings.Visible = false;
+            panel_Destinations.Visible = false;
+
         }
 
         private void rjButton_Settings_Click(object sender, EventArgs e)
@@ -144,6 +182,8 @@ namespace Proiect
             panel_Dashboard.Visible = false;
             panel_Account.Visible = false;
             panel_Settings.Visible = true;
+            panel_Destinations.Visible = false;
+
             panel_Name.Visible = false;
             panel_EditContactInfo.Visible = false;
             panel_ChangeUsername.Visible = false;
@@ -168,9 +208,9 @@ namespace Proiect
             panel_ChangeUsername.Visible = false;
             panel_ChangePassword.Visible = false;
             panel_DeleteAccount.Visible = false;
-
-            label_DisplayFirstName.Text = Account.FirstName;
-            label_DisplayLastName.Text = Account.LastName;
+            //de facut numele
+      /*      label_DisplayFirstName.Text = ;
+            label_DisplayLastName.Text = ;*/
         }
 
         private void rjButton_ChangeUsername_Click(object sender, EventArgs e)
@@ -202,9 +242,40 @@ namespace Proiect
 
         private void rjButton_SaveName_Click(object sender, EventArgs e)
         {
-            Account.FirstName = textBox_FirstName.Text;
-            Account.LastName = textBox_LastName.Text;
-           
+            String firstName = textBox_FirstName.Text;
+            String lastName = textBox_LastName.Text;
+            String username = Account.username;
+            String password = Account.password;
+            String queryChangeName = "UPDATE Users SET FirstName=@firstName, LastName=@lastName WHERE UserName=@username AND Password=@password";
+
+            try
+            {
+
+                sqlConnection.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chris\Documents\Facultate\SEM2\ProjectII\Proiect\Turism.mdf;Integrated Security=True";
+
+                sqlConnection.Open();
+                SqlCommand cmd = new SqlCommand(queryChangeName, sqlConnection);
+                cmd.Parameters.AddWithValue("@password", password);
+                cmd.Parameters.AddWithValue("@username", username);
+                cmd.Parameters.AddWithValue("@lastName", lastName);
+                cmd.Parameters.AddWithValue("@firstName", firstName);
+                //de facut numele 
+                Account.FirstName = firstName;
+                Account.LastName = lastName;
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Name changed succesfuly!");
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                sqlConnection.Close();
+            }
+
         }
         /// <summary>
         /// Connection to the database
@@ -228,7 +299,7 @@ namespace Proiect
             String queryGetUsername = "SELECT Username FROM Users WHERE Password=@password";
             try
             {
-                sqlConnection.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chris\Documents\Facultate\SEM2\ProjectII\Proiect\Tourism.mdf;Integrated Security=True";
+                sqlConnection.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chris\Documents\Facultate\SEM2\ProjectII\Proiect\Turism.mdf;Integrated Security=True";
 
                 sqlConnection.Open();
 
@@ -313,7 +384,7 @@ namespace Proiect
             try
             {
 
-                sqlConnection.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chris\Documents\Facultate\SEM2\ProjectII\Proiect\Tourism.mdf;Integrated Security=True";
+                sqlConnection.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chris\Documents\Facultate\SEM2\ProjectII\Proiect\Turism.mdf;Integrated Security=True";
 
                 sqlConnection.Open();
                 SqlCommand cmdCheck = new SqlCommand(queryGetPass, sqlConnection);
@@ -374,7 +445,7 @@ namespace Proiect
             try
             {
 
-                sqlConnection.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chris\Documents\Facultate\SEM2\ProjectII\Proiect\Tourism.mdf;Integrated Security=True";
+                sqlConnection.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chris\Documents\Facultate\SEM2\ProjectII\Proiect\Turism.mdf;Integrated Security=True";
 
                 sqlConnection.Open();
                 SqlCommand cmdCheck = new SqlCommand(queryGetUsername, sqlConnection);
@@ -419,5 +490,110 @@ namespace Proiect
                 sqlConnection.Close();
             }
         }
+        /// <summary>
+        /// RIGHT PANEL
+        /// </summary>
+     
+        private void rjButton_Destinations_Click(object sender, EventArgs e)
+        {
+            panel_Dashboard.Visible = false;
+            panel_Account.Visible = false;
+            panel_Settings.Visible = false;
+            panel_Destinations.Visible = true;
+            panel_Accomodation.Visible = false;
+            panel_Flights.Visible = false;
+            pictureBox_Destination.Visible = false;
+            panel_Destinations.BackgroundImage = Properties.Resources.exploredes;
+            comboBox_Destinations.Text = "See available destinations:";
+
+        }
+
+   
+
+        private void comboBox_Destinations_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            String selectedDestination = comboBox_Destinations.SelectedItem.ToString();
+            panel_Destinations.BackgroundImage = Properties.Resources.exploreaccafter;
+
+            pictureBox_Destination.Visible = true;
+            foreach(DataRow dr in dsDestinatii.Tables["Destinatii"].Rows)
+            {
+                if (selectedDestination == dr.ItemArray.GetValue(1).ToString())
+                {
+                    pictureBox_Destination.SizeMode = PictureBoxSizeMode.StretchImage;
+                    pictureBox_Destination.ImageLocation= @"C:\Users\chris\Documents\Facultate\SEM2\ProjectII\Proiect\Resources\"+ dr.ItemArray.GetValue(2).ToString();
+                }
+            }
+        }
+
+        private void rjButton_Accomodations_Click(object sender, EventArgs e)
+        {
+            panel_Dashboard.Visible = false;
+            panel_Account.Visible = false;
+            panel_Settings.Visible = false;
+            panel_Destinations.Visible = false;
+            panel_Accomodation.Visible = true;
+            panel_Flights.Visible = false;
+            panel_Offers.Visible = false;
+            panel_Accomodation.BackgroundImage = Properties.Resources.exploreacc;
+        }
+
+        private void rjButton_Flights_Click(object sender, EventArgs e)
+        {
+            panel_Dashboard.Visible = false;
+            panel_Account.Visible = false;
+            panel_Settings.Visible = false;
+            panel_Destinations.Visible = false;
+            panel_Accomodation.Visible = false;
+            panel_Flights.Visible = true;
+        }
+
+        
+        private void comboBox_DestinationAccomodation_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            String selectedDestination = comboBox_DestinationAccomodation.SelectedItem.ToString();
+            String destinatieid;
+            panel_Accomodation.BackgroundImage = Properties.Resources.exploreaccafter;
+
+
+            foreach (DataRow dr in dsDestinatii.Tables["Destinatii"].Rows)
+            {
+                if (selectedDestination == dr.ItemArray.GetValue(1).ToString())
+                {
+                    destinatieid = dr.ItemArray.GetValue(0).ToString();
+                    label_DisplayDestination.Text = dr.ItemArray.GetValue(1).ToString().ToUpper();
+                    dsCazari = new DataSet();
+                    try
+                    {
+                        sqlConnection.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chris\Documents\Facultate\SEM2\ProjectII\Proiect\Turism.mdf;Integrated Security=True";
+
+                        sqlConnection.Open();
+                        SqlCommand cmd = new SqlCommand("SELECT * FROM Cazari WHERE Destinatie_id=@destinatieid", sqlConnection);
+                        cmd.Parameters.AddWithValue("@destinatieid", destinatieid);
+                        cmd.ExecuteNonQuery();
+                        SqlDataAdapter daCazari = new SqlDataAdapter(cmd);
+                        daCazari.Fill(dsCazari, "Cazari");
+                        foreach (DataRow dr2 in dsCazari.Tables["Cazari"].Rows)
+                        {
+
+                            label_StartDate.Text = dr2.ItemArray.GetValue(2).ToString();
+                            label_EndDate.Text= dr2.ItemArray.GetValue(3).ToString();
+                            label_DisplayPrice.Text= dr2.ItemArray.GetValue(4).ToString();
+                        }
+
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                        Console.WriteLine(ex.Message);
+                    }
+                    sqlConnection.Close();
+                }
+            }
+            panel_Offers.Visible = true;
+        }
+
+       
     }
 }

@@ -90,11 +90,6 @@
     <Compile Include="RJControls\RJButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="TourismDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TourismDataSet.xsd</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="MenuForm.resx">
       <DependentUpon>MenuForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,28 +119,23 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="TourismDataSet.xsc">
-      <DependentUpon>TourismDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="TourismDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>TourismDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="TourismDataSet.xss">
-      <DependentUpon>TourismDataSet.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\explore.png" />
+    <None Include="Resources\exploreacc.png" />
+    <None Include="Resources\exploreaccafter.png" />
+    <None Include="Resources\exploredes.png" />
+    <Content Include="Turism.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Turism_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Turism.mdf</DependentUpon>
+    </Content>
     <None Include="Resources\Login-bro.png" />
-    <None Include="Resources\iconhome.png" />
-    <None Include="Resources\iconlogout.png" />
-    <None Include="Resources\iconsetting.png" />
-    <None Include="Resources\iconhomeR.png" />
-    <None Include="Resources\iconsettingR.png" />
     <None Include="Resources\heart-free-icon-font.png" />
     <None Include="Resources\home-free-icon-font.png" />
     <None Include="Resources\settings-free-icon-font.png" />
@@ -153,19 +143,11 @@
     <None Include="Resources\sign-out-alt-free-icon-font.png" />
     <None Include="Resources\map-marker-home-free-icon-font.png" />
     <None Include="Resources\home-free-icon-font %281%29.png" />
-    <Content Include="Tourism.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Tourism_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Tourism.mdf</DependentUpon>
-    </Content>
     <None Include="Resources\login-pana.png" />
     <None Include="Resources\Mobile login-pana.svg" />
     <None Include="Resources\login2.jpg" />
     <None Include="Resources\login.jpg" />
     <None Include="Resources\login1.gif" />
-    <None Include="Resources\loginLeft.gif" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

@@ -20,7 +20,7 @@ namespace Proiect
             InitializeComponent();
             try
             {
-                sqlConnection.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chris\Documents\Facultate\SEM2\ProjectII\Proiect\Tourism.mdf;Integrated Security=True";
+                sqlConnection.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chris\Documents\Facultate\SEM2\ProjectII\Proiect\Turism.mdf;Integrated Security=True";
 
                 sqlConnection.Open();
             }
@@ -37,7 +37,7 @@ namespace Proiect
         {
           
         }
-       
+        
 
         private void rjButton_RegisterPage_Click(object sender, EventArgs e)
         {
@@ -59,7 +59,7 @@ namespace Proiect
             String username = textBox_Username.Text;
             String password = textBox_Password.Text;
             textBox_Username.MaxLength = 21;
-            String queryLogin = "SELECT * FROM Users WHERE UserName=@username AND Password=@password";
+            String queryLogin = "SELECT * FROM Users WHERE UserName=@username AND Password=@password COLLATE SQL_Latin1_General_CP1_CS_AS ";
             try
             {
                
@@ -74,6 +74,7 @@ namespace Proiect
                 sda.Fill(dt);
                 sqlConnection.Open();
                 int i = cmd.ExecuteNonQuery();
+               
                 if (dt.Rows.Count > 0)
                 {
                     
