@@ -80,6 +80,9 @@ namespace Proiect
                     
                     Account.username = username;
                     Account.password = password;
+                    //asta sa luam mai usor first/last
+                    Account.FirstName = dt.Rows[0]["FirstName"].ToString();
+                    Account.LastName = dt.Rows[0]["LastName"].ToString();
                     Program.OpenDetailFormMenu = true;
                     this.Close();
                     

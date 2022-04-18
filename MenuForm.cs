@@ -42,6 +42,7 @@ namespace Proiect
         DataSet dsDestinatii;
         DataSet dsCazari;
         DataSet dsUser;
+        DataSet dsZboruri;
         public MenuForm()
         {
             InitializeComponent();
@@ -59,6 +60,7 @@ namespace Proiect
                     String name = dr.ItemArray.GetValue(1).ToString();
                     comboBox_Destinations.Items.Add(name);
                     comboBox_DestinationAccomodation.Items.Add(name);
+                    comboBox_ShowCityFlights.Items.Add(name);
                 }
                
 
@@ -68,10 +70,11 @@ namespace Proiect
                 MessageBox.Show(ex.Message);
                 Console.WriteLine(ex.Message);
             }
-            sqlConnection.Close();
-          
+            
+                sqlConnection.Close();
 
 
+        
 
         }
 
@@ -83,10 +86,14 @@ namespace Proiect
         private void MenuForm_Load(object sender, EventArgs e)
         {
             label_Welcome.Text = "";
-           //de facut numele
-               
+            //de facut numele
+            if (Account.FirstName == "")
+            {
                 label_Welcome.Text = "Welcome, " + Account.username + "!";
-            
+            }else
+            {
+                label_Welcome.Text = "Welcome, " + Account.FirstName + "!";
+            }
             panel_Dashboard.Visible = true;
             panel_Account.Visible = false;
             panel_Settings.Visible = false;
@@ -165,6 +172,9 @@ namespace Proiect
             panel_Account.Visible = false;
             panel_Settings.Visible = false;
             panel_Destinations.Visible = false;
+            panel_Accomodation.Visible = false;
+            panel_Flights.Visible = false;
+            panel_Offers.Visible = false;
 
         }
 
@@ -174,6 +184,9 @@ namespace Proiect
             panel_Account.Visible = true;
             panel_Settings.Visible = false;
             panel_Destinations.Visible = false;
+            panel_Accomodation.Visible = false;
+            panel_Flights.Visible = false;
+            panel_Offers.Visible = false;
 
         }
 
@@ -183,6 +196,9 @@ namespace Proiect
             panel_Account.Visible = false;
             panel_Settings.Visible = true;
             panel_Destinations.Visible = false;
+            panel_Accomodation.Visible = false;
+            panel_Flights.Visible = false;
+            panel_Offers.Visible = false;
 
             panel_Name.Visible = false;
             panel_EditContactInfo.Visible = false;
@@ -208,9 +224,13 @@ namespace Proiect
             panel_ChangeUsername.Visible = false;
             panel_ChangePassword.Visible = false;
             panel_DeleteAccount.Visible = false;
-            //de facut numele
-      /*      label_DisplayFirstName.Text = ;
-            label_DisplayLastName.Text = ;*/
+            //merge
+            label_DisplayFirstName.Text = Account.FirstName;
+            label_DisplayLastName.Text = Account.LastName;
+          
+
+
+
         }
 
         private void rjButton_ChangeUsername_Click(object sender, EventArgs e)
@@ -258,11 +278,12 @@ namespace Proiect
                 cmd.Parameters.AddWithValue("@password", password);
                 cmd.Parameters.AddWithValue("@username", username);
                 cmd.Parameters.AddWithValue("@lastName", lastName);
-                cmd.Parameters.AddWithValue("@firstName", firstName);
-                //de facut numele 
+                cmd.Parameters.AddWithValue("@firstName", firstName); 
+                //merge
                 Account.FirstName = firstName;
                 Account.LastName = lastName;
                 cmd.ExecuteNonQuery();
+                label_Welcome.Text = "Welcome, " + Account.FirstName + "!";
 
                 MessageBox.Show("Name changed succesfuly!");
                 
@@ -594,6 +615,50 @@ namespace Proiect
             panel_Offers.Visible = true;
         }
 
-       
+        private void comboBox_ShowCityFlights_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            String selectedDestination = comboBox_ShowCityFlights.SelectedItem.ToString();
+            String destinatieid;
+          //  panel_Accomodation.BackgroundImage = Properties.Resources.exploreaccafter;
+
+
+            foreach (DataRow dr in dsDestinatii.Tables["Destinatii"].Rows)
+            {
+                if (selectedDestination == dr.ItemArray.GetValue(1).ToString())
+                {
+                    destinatieid = dr.ItemArray.GetValue(0).ToString();
+                    label_FlightDestination.Text = dr.ItemArray.GetValue(1).ToString().ToUpper();
+                    dsZboruri = new DataSet();
+                    try
+                    {
+                        sqlConnection.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\chris\Documents\Facultate\SEM2\ProjectII\Proiect\Turism.mdf;Integrated Security=True";
+
+                        sqlConnection.Open();
+                        SqlCommand cmd = new SqlCommand("SELECT * FROM Zboruri WHERE Destinatie_id=@destinatieid", sqlConnection);
+                        cmd.Parameters.AddWithValue("@destinatieid", destinatieid);
+                        cmd.ExecuteNonQuery();
+                        SqlDataAdapter daZboruri = new SqlDataAdapter(cmd);
+                        daZboruri.Fill(dsZboruri, "Zboruri");
+                        foreach (DataRow dr2 in dsZboruri.Tables["Zboruri"].Rows)
+                        {
+
+                            label_FlightStart.Text = dr2.ItemArray.GetValue(2).ToString();
+                            label_FlightEnd.Text = dr2.ItemArray.GetValue(3).ToString();
+                            label_displayAirport.Text = dr2.ItemArray.GetValue(4).ToString();
+                            label_FlightPrice.Text = dr2.ItemArray.GetValue(5).ToString();
+                        }
+
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                        Console.WriteLine(ex.Message);
+                    }
+                    sqlConnection.Close();
+                }
+            }
+            panel_DisplayFlights.Visible = true;
+        }
     }
 }

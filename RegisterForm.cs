@@ -89,7 +89,8 @@ namespace Proiect
                             {
                                 Account.username = username;
                                 Account.password = password;
-                                
+                                Account.FirstName = "";
+                                Account.LastName = "";
                                 Program.OpenDetailFormMenu = true ;
                                 this.Close();
                                

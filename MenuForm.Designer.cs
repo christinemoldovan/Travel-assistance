@@ -30,13 +30,22 @@ namespace Proiect
         private void InitializeComponent()
         {
             this.panel_Left = new System.Windows.Forms.Panel();
+            this.rjButton_Logout = new Proiect.RJControls.RJButton();
+            this.rjButton_Account = new Proiect.RJControls.RJButton();
+            this.rjButton_Settings = new Proiect.RJControls.RJButton();
+            this.rjButton_Dashboard = new Proiect.RJControls.RJButton();
             this.panel_Dashboard = new System.Windows.Forms.Panel();
             this.label_Welcome = new System.Windows.Forms.Label();
             this.panel_Account = new System.Windows.Forms.Panel();
             this.label_Account = new System.Windows.Forms.Label();
             this.panel_Settings = new System.Windows.Forms.Panel();
             this.label_Settings_Personal = new System.Windows.Forms.Label();
+            this.rjButton_ChangeContactInfo = new Proiect.RJControls.RJButton();
+            this.rjButton_changeName = new Proiect.RJControls.RJButton();
+            this.rjButton_DeleteAccount = new Proiect.RJControls.RJButton();
             this.label_Settings_Security = new System.Windows.Forms.Label();
+            this.rjButton_ChangePassword = new Proiect.RJControls.RJButton();
+            this.rjButton_ChangeUsername = new Proiect.RJControls.RJButton();
             this.label_Settings = new System.Windows.Forms.Label();
             this.panel_EditContactInfo = new System.Windows.Forms.Panel();
             this.label_DisplayLastName = new System.Windows.Forms.Label();
@@ -45,30 +54,39 @@ namespace Proiect
             this.label4 = new System.Windows.Forms.Label();
             this.label_ConctactInfo = new System.Windows.Forms.Label();
             this.panel_Name = new System.Windows.Forms.Panel();
+            this.rjButton_SaveName = new Proiect.RJControls.RJButton();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox_LastName = new System.Windows.Forms.TextBox();
             this.label_editName = new System.Windows.Forms.Label();
             this.textBox_FirstName = new System.Windows.Forms.TextBox();
             this.label_Name = new System.Windows.Forms.Label();
             this.panel_DeleteAccount = new System.Windows.Forms.Panel();
+            this.rjButton_SaveDeletedAccount = new Proiect.RJControls.RJButton();
             this.label_EnterPasswordDelete = new System.Windows.Forms.Label();
             this.textBox_deletedPassword = new System.Windows.Forms.TextBox();
             this.label_EnterUsernameDelete = new System.Windows.Forms.Label();
             this.textBox_deletedUsername = new System.Windows.Forms.TextBox();
             this.label_DeleteAccount = new System.Windows.Forms.Label();
             this.panel_ChangePassword = new System.Windows.Forms.Panel();
+            this.rjButton_SaveNewPassword = new Proiect.RJControls.RJButton();
             this.label_EnterNewPasswordChangePass = new System.Windows.Forms.Label();
             this.textBox_SaveNewPassword = new System.Windows.Forms.TextBox();
             this.label_EnterPasswordChangePass = new System.Windows.Forms.Label();
             this.textBox_CheckCurrentPassword = new System.Windows.Forms.TextBox();
             this.label_ChangePassword = new System.Windows.Forms.Label();
             this.panel_ChangeUsername = new System.Windows.Forms.Panel();
+            this.rjButton_SaveNewUsername = new Proiect.RJControls.RJButton();
             this.label_EnterNewUsernameChangeUsername = new System.Windows.Forms.Label();
             this.textBox_SaveNewUsername = new System.Windows.Forms.TextBox();
             this.label_EnterUsernameChangeUsername = new System.Windows.Forms.Label();
             this.textBox_CheckCurrentUsername = new System.Windows.Forms.TextBox();
             this.label_ChangeUsername = new System.Windows.Forms.Label();
             this.panel_Right = new System.Windows.Forms.Panel();
+            this.rjButton_MyPlans = new Proiect.RJControls.RJButton();
+            this.rjButton_Book = new Proiect.RJControls.RJButton();
+            this.rjButton_Flights = new Proiect.RJControls.RJButton();
+            this.rjButton_Accomodations = new Proiect.RJControls.RJButton();
+            this.rjButton_Destinations = new Proiect.RJControls.RJButton();
             this.panel_Destinations = new System.Windows.Forms.Panel();
             this.pictureBox_Destination = new System.Windows.Forms.PictureBox();
             this.label_Destination = new System.Windows.Forms.Label();
@@ -89,24 +107,20 @@ namespace Proiect
             this.label_Price = new System.Windows.Forms.Label();
             this.panel_Flights = new System.Windows.Forms.Panel();
             this.label_Flights = new System.Windows.Forms.Label();
-            this.rjButton_MyPlans = new Proiect.RJControls.RJButton();
-            this.rjButton_Book = new Proiect.RJControls.RJButton();
-            this.rjButton_Flights = new Proiect.RJControls.RJButton();
-            this.rjButton_Accomodations = new Proiect.RJControls.RJButton();
-            this.rjButton_Destinations = new Proiect.RJControls.RJButton();
-            this.rjButton_Logout = new Proiect.RJControls.RJButton();
-            this.rjButton_Account = new Proiect.RJControls.RJButton();
-            this.rjButton_Settings = new Proiect.RJControls.RJButton();
-            this.rjButton_Dashboard = new Proiect.RJControls.RJButton();
-            this.rjButton_ChangeContactInfo = new Proiect.RJControls.RJButton();
-            this.rjButton_changeName = new Proiect.RJControls.RJButton();
-            this.rjButton_DeleteAccount = new Proiect.RJControls.RJButton();
-            this.rjButton_ChangePassword = new Proiect.RJControls.RJButton();
-            this.rjButton_ChangeUsername = new Proiect.RJControls.RJButton();
-            this.rjButton_SaveName = new Proiect.RJControls.RJButton();
-            this.rjButton_SaveDeletedAccount = new Proiect.RJControls.RJButton();
-            this.rjButton_SaveNewPassword = new Proiect.RJControls.RJButton();
-            this.rjButton_SaveNewUsername = new Proiect.RJControls.RJButton();
+            this.comboBox_ShowCityFlights = new System.Windows.Forms.ComboBox();
+            this.panel_DisplayFlights = new System.Windows.Forms.Panel();
+            this.label = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label_FlightEnd = new System.Windows.Forms.Label();
+            this.label_FlightStart = new System.Windows.Forms.Label();
+            this.label_FlightPrice = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label_FlightDestination = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label_displayAirport = new System.Windows.Forms.Label();
             this.panel_Left.SuspendLayout();
             this.panel_Dashboard.SuspendLayout();
             this.panel_Account.SuspendLayout();
@@ -122,6 +136,7 @@ namespace Proiect
             this.panel_Accomodation.SuspendLayout();
             this.panel_Offers.SuspendLayout();
             this.panel_Flights.SuspendLayout();
+            this.panel_DisplayFlights.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_Left
@@ -135,6 +150,106 @@ namespace Proiect
             this.panel_Left.Name = "panel_Left";
             this.panel_Left.Size = new System.Drawing.Size(220, 771);
             this.panel_Left.TabIndex = 1;
+            // 
+            // rjButton_Logout
+            // 
+            this.rjButton_Logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
+            this.rjButton_Logout.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
+            this.rjButton_Logout.BorderColor = System.Drawing.Color.Transparent;
+            this.rjButton_Logout.BorderRadius = 20;
+            this.rjButton_Logout.BorderSize = 0;
+            this.rjButton_Logout.FlatAppearance.BorderSize = 0;
+            this.rjButton_Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton_Logout.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
+            this.rjButton_Logout.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_Logout.Image = global::Proiect.Properties.Resources.sign_out_alt_free_icon_font;
+            this.rjButton_Logout.Location = new System.Drawing.Point(30, 550);
+            this.rjButton_Logout.Name = "rjButton_Logout";
+            this.rjButton_Logout.Size = new System.Drawing.Size(149, 45);
+            this.rjButton_Logout.TabIndex = 4;
+            this.rjButton_Logout.Text = "  Logout";
+            this.rjButton_Logout.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.rjButton_Logout.TextColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_Logout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rjButton_Logout.UseVisualStyleBackColor = false;
+            this.rjButton_Logout.Click += new System.EventHandler(this.rjButton_Logout_Click);
+            this.rjButton_Logout.MouseLeave += new System.EventHandler(this.rjButton_Logout_MouseLeave);
+            this.rjButton_Logout.MouseHover += new System.EventHandler(this.rjButton_Logout_MouseHover);
+            // 
+            // rjButton_Account
+            // 
+            this.rjButton_Account.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
+            this.rjButton_Account.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
+            this.rjButton_Account.BorderColor = System.Drawing.Color.Transparent;
+            this.rjButton_Account.BorderRadius = 20;
+            this.rjButton_Account.BorderSize = 0;
+            this.rjButton_Account.FlatAppearance.BorderSize = 0;
+            this.rjButton_Account.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton_Account.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
+            this.rjButton_Account.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_Account.Image = global::Proiect.Properties.Resources.user_free_icon_font;
+            this.rjButton_Account.Location = new System.Drawing.Point(30, 200);
+            this.rjButton_Account.Name = "rjButton_Account";
+            this.rjButton_Account.Size = new System.Drawing.Size(149, 45);
+            this.rjButton_Account.TabIndex = 3;
+            this.rjButton_Account.Text = " My Account";
+            this.rjButton_Account.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.rjButton_Account.TextColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_Account.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rjButton_Account.UseVisualStyleBackColor = false;
+            this.rjButton_Account.Click += new System.EventHandler(this.rjButton_Account_Click);
+            this.rjButton_Account.MouseLeave += new System.EventHandler(this.rjButton_Account_MouseLeave);
+            this.rjButton_Account.MouseHover += new System.EventHandler(this.rjButton_Account_MouseHover);
+            // 
+            // rjButton_Settings
+            // 
+            this.rjButton_Settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
+            this.rjButton_Settings.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
+            this.rjButton_Settings.BorderColor = System.Drawing.Color.Transparent;
+            this.rjButton_Settings.BorderRadius = 20;
+            this.rjButton_Settings.BorderSize = 0;
+            this.rjButton_Settings.FlatAppearance.BorderSize = 0;
+            this.rjButton_Settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton_Settings.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
+            this.rjButton_Settings.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_Settings.Image = global::Proiect.Properties.Resources.settings_free_icon_font;
+            this.rjButton_Settings.Location = new System.Drawing.Point(30, 500);
+            this.rjButton_Settings.Name = "rjButton_Settings";
+            this.rjButton_Settings.Size = new System.Drawing.Size(149, 45);
+            this.rjButton_Settings.TabIndex = 2;
+            this.rjButton_Settings.Text = "  Settings";
+            this.rjButton_Settings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.rjButton_Settings.TextColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_Settings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rjButton_Settings.UseVisualStyleBackColor = false;
+            this.rjButton_Settings.Click += new System.EventHandler(this.rjButton_Settings_Click);
+            this.rjButton_Settings.MouseLeave += new System.EventHandler(this.rjButton_Settings_MouseLeave);
+            this.rjButton_Settings.MouseHover += new System.EventHandler(this.rjButton_Settings_MouseHover);
+            // 
+            // rjButton_Dashboard
+            // 
+            this.rjButton_Dashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
+            this.rjButton_Dashboard.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
+            this.rjButton_Dashboard.BorderColor = System.Drawing.Color.Transparent;
+            this.rjButton_Dashboard.BorderRadius = 20;
+            this.rjButton_Dashboard.BorderSize = 0;
+            this.rjButton_Dashboard.FlatAppearance.BorderSize = 0;
+            this.rjButton_Dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton_Dashboard.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
+            this.rjButton_Dashboard.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_Dashboard.Image = global::Proiect.Properties.Resources.map_marker_home_free_icon_font;
+            this.rjButton_Dashboard.Location = new System.Drawing.Point(30, 100);
+            this.rjButton_Dashboard.Name = "rjButton_Dashboard";
+            this.rjButton_Dashboard.Size = new System.Drawing.Size(149, 45);
+            this.rjButton_Dashboard.TabIndex = 1;
+            this.rjButton_Dashboard.Text = "  Dashboard";
+            this.rjButton_Dashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.rjButton_Dashboard.TextColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_Dashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rjButton_Dashboard.UseVisualStyleBackColor = false;
+            this.rjButton_Dashboard.Click += new System.EventHandler(this.rjButton_Dashboard_Click);
+            this.rjButton_Dashboard.MouseLeave += new System.EventHandler(this.rjButton_Dashboard_MouseLeave);
+            this.rjButton_Dashboard.MouseHover += new System.EventHandler(this.rjButton_Dashboard_MouseHover);
             // 
             // panel_Dashboard
             // 
@@ -211,6 +326,69 @@ namespace Proiect
             this.label_Settings_Personal.TabIndex = 11;
             this.label_Settings_Personal.Text = "Personal information:";
             // 
+            // rjButton_ChangeContactInfo
+            // 
+            this.rjButton_ChangeContactInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
+            this.rjButton_ChangeContactInfo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
+            this.rjButton_ChangeContactInfo.BorderColor = System.Drawing.Color.Transparent;
+            this.rjButton_ChangeContactInfo.BorderRadius = 20;
+            this.rjButton_ChangeContactInfo.BorderSize = 0;
+            this.rjButton_ChangeContactInfo.FlatAppearance.BorderSize = 0;
+            this.rjButton_ChangeContactInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton_ChangeContactInfo.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
+            this.rjButton_ChangeContactInfo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_ChangeContactInfo.Location = new System.Drawing.Point(34, 207);
+            this.rjButton_ChangeContactInfo.Name = "rjButton_ChangeContactInfo";
+            this.rjButton_ChangeContactInfo.Size = new System.Drawing.Size(296, 47);
+            this.rjButton_ChangeContactInfo.TabIndex = 10;
+            this.rjButton_ChangeContactInfo.Text = "Contact info";
+            this.rjButton_ChangeContactInfo.TextColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_ChangeContactInfo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rjButton_ChangeContactInfo.UseVisualStyleBackColor = false;
+            this.rjButton_ChangeContactInfo.Click += new System.EventHandler(this.rjButton_ChangeContactInfo_Click);
+            // 
+            // rjButton_changeName
+            // 
+            this.rjButton_changeName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
+            this.rjButton_changeName.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
+            this.rjButton_changeName.BorderColor = System.Drawing.Color.Transparent;
+            this.rjButton_changeName.BorderRadius = 20;
+            this.rjButton_changeName.BorderSize = 0;
+            this.rjButton_changeName.FlatAppearance.BorderSize = 0;
+            this.rjButton_changeName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton_changeName.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
+            this.rjButton_changeName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_changeName.Location = new System.Drawing.Point(34, 157);
+            this.rjButton_changeName.Name = "rjButton_changeName";
+            this.rjButton_changeName.Size = new System.Drawing.Size(296, 47);
+            this.rjButton_changeName.TabIndex = 9;
+            this.rjButton_changeName.Text = "Change name";
+            this.rjButton_changeName.TextColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_changeName.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rjButton_changeName.UseVisualStyleBackColor = false;
+            this.rjButton_changeName.Click += new System.EventHandler(this.rjButton_changeName_Click);
+            // 
+            // rjButton_DeleteAccount
+            // 
+            this.rjButton_DeleteAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
+            this.rjButton_DeleteAccount.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
+            this.rjButton_DeleteAccount.BorderColor = System.Drawing.Color.Transparent;
+            this.rjButton_DeleteAccount.BorderRadius = 20;
+            this.rjButton_DeleteAccount.BorderSize = 0;
+            this.rjButton_DeleteAccount.FlatAppearance.BorderSize = 0;
+            this.rjButton_DeleteAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton_DeleteAccount.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
+            this.rjButton_DeleteAccount.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_DeleteAccount.Location = new System.Drawing.Point(34, 482);
+            this.rjButton_DeleteAccount.Name = "rjButton_DeleteAccount";
+            this.rjButton_DeleteAccount.Size = new System.Drawing.Size(296, 47);
+            this.rjButton_DeleteAccount.TabIndex = 8;
+            this.rjButton_DeleteAccount.Text = "Delete Account";
+            this.rjButton_DeleteAccount.TextColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_DeleteAccount.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rjButton_DeleteAccount.UseVisualStyleBackColor = false;
+            this.rjButton_DeleteAccount.Click += new System.EventHandler(this.rjButton_DeleteAccount_Click);
+            // 
             // label_Settings_Security
             // 
             this.label_Settings_Security.AutoSize = true;
@@ -222,6 +400,48 @@ namespace Proiect
             this.label_Settings_Security.Size = new System.Drawing.Size(321, 41);
             this.label_Settings_Security.TabIndex = 7;
             this.label_Settings_Security.Text = "Password and security:";
+            // 
+            // rjButton_ChangePassword
+            // 
+            this.rjButton_ChangePassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
+            this.rjButton_ChangePassword.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
+            this.rjButton_ChangePassword.BorderColor = System.Drawing.Color.Transparent;
+            this.rjButton_ChangePassword.BorderRadius = 20;
+            this.rjButton_ChangePassword.BorderSize = 0;
+            this.rjButton_ChangePassword.FlatAppearance.BorderSize = 0;
+            this.rjButton_ChangePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton_ChangePassword.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
+            this.rjButton_ChangePassword.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_ChangePassword.Location = new System.Drawing.Point(34, 432);
+            this.rjButton_ChangePassword.Name = "rjButton_ChangePassword";
+            this.rjButton_ChangePassword.Size = new System.Drawing.Size(296, 47);
+            this.rjButton_ChangePassword.TabIndex = 6;
+            this.rjButton_ChangePassword.Text = "Change Password";
+            this.rjButton_ChangePassword.TextColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_ChangePassword.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rjButton_ChangePassword.UseVisualStyleBackColor = false;
+            this.rjButton_ChangePassword.Click += new System.EventHandler(this.rjButton_ChangePassword_Click);
+            // 
+            // rjButton_ChangeUsername
+            // 
+            this.rjButton_ChangeUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
+            this.rjButton_ChangeUsername.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
+            this.rjButton_ChangeUsername.BorderColor = System.Drawing.Color.Transparent;
+            this.rjButton_ChangeUsername.BorderRadius = 20;
+            this.rjButton_ChangeUsername.BorderSize = 0;
+            this.rjButton_ChangeUsername.FlatAppearance.BorderSize = 0;
+            this.rjButton_ChangeUsername.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton_ChangeUsername.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
+            this.rjButton_ChangeUsername.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_ChangeUsername.Location = new System.Drawing.Point(34, 382);
+            this.rjButton_ChangeUsername.Name = "rjButton_ChangeUsername";
+            this.rjButton_ChangeUsername.Size = new System.Drawing.Size(296, 47);
+            this.rjButton_ChangeUsername.TabIndex = 5;
+            this.rjButton_ChangeUsername.Text = "Change Username";
+            this.rjButton_ChangeUsername.TextColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_ChangeUsername.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rjButton_ChangeUsername.UseVisualStyleBackColor = false;
+            this.rjButton_ChangeUsername.Click += new System.EventHandler(this.rjButton_ChangeUsername_Click);
             // 
             // label_Settings
             // 
@@ -251,22 +471,22 @@ namespace Proiect
             // label_DisplayLastName
             // 
             this.label_DisplayLastName.AutoSize = true;
-            this.label_DisplayLastName.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Bold);
+            this.label_DisplayLastName.Font = new System.Drawing.Font("Lucida Fax", 15F, System.Drawing.FontStyle.Bold);
             this.label_DisplayLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(116)))), ((int)(((byte)(27)))));
             this.label_DisplayLastName.Location = new System.Drawing.Point(29, 160);
             this.label_DisplayLastName.Name = "label_DisplayLastName";
-            this.label_DisplayLastName.Size = new System.Drawing.Size(101, 20);
+            this.label_DisplayLastName.Size = new System.Drawing.Size(148, 30);
             this.label_DisplayLastName.TabIndex = 25;
             this.label_DisplayLastName.Text = "Last name";
             // 
             // label_DisplayFirstName
             // 
             this.label_DisplayFirstName.AutoSize = true;
-            this.label_DisplayFirstName.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Bold);
+            this.label_DisplayFirstName.Font = new System.Drawing.Font("Lucida Fax", 15F, System.Drawing.FontStyle.Bold);
             this.label_DisplayFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(116)))), ((int)(((byte)(27)))));
             this.label_DisplayFirstName.Location = new System.Drawing.Point(29, 90);
             this.label_DisplayFirstName.Name = "label_DisplayFirstName";
-            this.label_DisplayFirstName.Size = new System.Drawing.Size(100, 20);
+            this.label_DisplayFirstName.Size = new System.Drawing.Size(149, 30);
             this.label_DisplayFirstName.TabIndex = 24;
             this.label_DisplayFirstName.Text = "FirstName";
             // 
@@ -319,6 +539,27 @@ namespace Proiect
             this.panel_Name.Name = "panel_Name";
             this.panel_Name.Size = new System.Drawing.Size(494, 435);
             this.panel_Name.TabIndex = 12;
+            // 
+            // rjButton_SaveName
+            // 
+            this.rjButton_SaveName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
+            this.rjButton_SaveName.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
+            this.rjButton_SaveName.BorderColor = System.Drawing.Color.Transparent;
+            this.rjButton_SaveName.BorderRadius = 20;
+            this.rjButton_SaveName.BorderSize = 0;
+            this.rjButton_SaveName.FlatAppearance.BorderSize = 0;
+            this.rjButton_SaveName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton_SaveName.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
+            this.rjButton_SaveName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_SaveName.Location = new System.Drawing.Point(27, 221);
+            this.rjButton_SaveName.Name = "rjButton_SaveName";
+            this.rjButton_SaveName.Size = new System.Drawing.Size(96, 47);
+            this.rjButton_SaveName.TabIndex = 19;
+            this.rjButton_SaveName.Text = "Save";
+            this.rjButton_SaveName.TextColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_SaveName.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rjButton_SaveName.UseVisualStyleBackColor = false;
+            this.rjButton_SaveName.Click += new System.EventHandler(this.rjButton_SaveName_Click);
             // 
             // label2
             // 
@@ -394,6 +635,27 @@ namespace Proiect
             this.panel_DeleteAccount.Size = new System.Drawing.Size(494, 435);
             this.panel_DeleteAccount.TabIndex = 18;
             // 
+            // rjButton_SaveDeletedAccount
+            // 
+            this.rjButton_SaveDeletedAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
+            this.rjButton_SaveDeletedAccount.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
+            this.rjButton_SaveDeletedAccount.BorderColor = System.Drawing.Color.Transparent;
+            this.rjButton_SaveDeletedAccount.BorderRadius = 20;
+            this.rjButton_SaveDeletedAccount.BorderSize = 0;
+            this.rjButton_SaveDeletedAccount.FlatAppearance.BorderSize = 0;
+            this.rjButton_SaveDeletedAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton_SaveDeletedAccount.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
+            this.rjButton_SaveDeletedAccount.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_SaveDeletedAccount.Location = new System.Drawing.Point(27, 219);
+            this.rjButton_SaveDeletedAccount.Name = "rjButton_SaveDeletedAccount";
+            this.rjButton_SaveDeletedAccount.Size = new System.Drawing.Size(96, 47);
+            this.rjButton_SaveDeletedAccount.TabIndex = 24;
+            this.rjButton_SaveDeletedAccount.Text = "Delete";
+            this.rjButton_SaveDeletedAccount.TextColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_SaveDeletedAccount.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rjButton_SaveDeletedAccount.UseVisualStyleBackColor = false;
+            this.rjButton_SaveDeletedAccount.Click += new System.EventHandler(this.rjButton_SaveDeletedAccount_Click);
+            // 
             // label_EnterPasswordDelete
             // 
             this.label_EnterPasswordDelete.AutoSize = true;
@@ -468,6 +730,27 @@ namespace Proiect
             this.panel_ChangePassword.Name = "panel_ChangePassword";
             this.panel_ChangePassword.Size = new System.Drawing.Size(494, 435);
             this.panel_ChangePassword.TabIndex = 17;
+            // 
+            // rjButton_SaveNewPassword
+            // 
+            this.rjButton_SaveNewPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
+            this.rjButton_SaveNewPassword.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
+            this.rjButton_SaveNewPassword.BorderColor = System.Drawing.Color.Transparent;
+            this.rjButton_SaveNewPassword.BorderRadius = 20;
+            this.rjButton_SaveNewPassword.BorderSize = 0;
+            this.rjButton_SaveNewPassword.FlatAppearance.BorderSize = 0;
+            this.rjButton_SaveNewPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton_SaveNewPassword.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
+            this.rjButton_SaveNewPassword.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_SaveNewPassword.Location = new System.Drawing.Point(27, 219);
+            this.rjButton_SaveNewPassword.Name = "rjButton_SaveNewPassword";
+            this.rjButton_SaveNewPassword.Size = new System.Drawing.Size(96, 47);
+            this.rjButton_SaveNewPassword.TabIndex = 24;
+            this.rjButton_SaveNewPassword.Text = "Save";
+            this.rjButton_SaveNewPassword.TextColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_SaveNewPassword.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rjButton_SaveNewPassword.UseVisualStyleBackColor = false;
+            this.rjButton_SaveNewPassword.Click += new System.EventHandler(this.rjButton_SaveNewPassword_Click);
             // 
             // label_EnterNewPasswordChangePass
             // 
@@ -545,6 +828,27 @@ namespace Proiect
             this.panel_ChangeUsername.Size = new System.Drawing.Size(494, 435);
             this.panel_ChangeUsername.TabIndex = 16;
             // 
+            // rjButton_SaveNewUsername
+            // 
+            this.rjButton_SaveNewUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
+            this.rjButton_SaveNewUsername.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
+            this.rjButton_SaveNewUsername.BorderColor = System.Drawing.Color.Transparent;
+            this.rjButton_SaveNewUsername.BorderRadius = 20;
+            this.rjButton_SaveNewUsername.BorderSize = 0;
+            this.rjButton_SaveNewUsername.FlatAppearance.BorderSize = 0;
+            this.rjButton_SaveNewUsername.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton_SaveNewUsername.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
+            this.rjButton_SaveNewUsername.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_SaveNewUsername.Location = new System.Drawing.Point(27, 219);
+            this.rjButton_SaveNewUsername.Name = "rjButton_SaveNewUsername";
+            this.rjButton_SaveNewUsername.Size = new System.Drawing.Size(96, 47);
+            this.rjButton_SaveNewUsername.TabIndex = 29;
+            this.rjButton_SaveNewUsername.Text = "Save";
+            this.rjButton_SaveNewUsername.TextColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_SaveNewUsername.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rjButton_SaveNewUsername.UseVisualStyleBackColor = false;
+            this.rjButton_SaveNewUsername.Click += new System.EventHandler(this.rjButton_SaveNewUsername_Click);
+            // 
             // label_EnterNewUsernameChangeUsername
             // 
             this.label_EnterNewUsernameChangeUsername.AutoSize = true;
@@ -617,6 +921,109 @@ namespace Proiect
             this.panel_Right.Name = "panel_Right";
             this.panel_Right.Size = new System.Drawing.Size(220, 771);
             this.panel_Right.TabIndex = 5;
+            // 
+            // rjButton_MyPlans
+            // 
+            this.rjButton_MyPlans.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
+            this.rjButton_MyPlans.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
+            this.rjButton_MyPlans.BorderColor = System.Drawing.Color.Transparent;
+            this.rjButton_MyPlans.BorderRadius = 20;
+            this.rjButton_MyPlans.BorderSize = 0;
+            this.rjButton_MyPlans.FlatAppearance.BorderSize = 0;
+            this.rjButton_MyPlans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton_MyPlans.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
+            this.rjButton_MyPlans.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_MyPlans.Location = new System.Drawing.Point(30, 500);
+            this.rjButton_MyPlans.Name = "rjButton_MyPlans";
+            this.rjButton_MyPlans.Size = new System.Drawing.Size(149, 45);
+            this.rjButton_MyPlans.TabIndex = 9;
+            this.rjButton_MyPlans.Text = "My Plans";
+            this.rjButton_MyPlans.TextColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_MyPlans.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rjButton_MyPlans.UseVisualStyleBackColor = false;
+            // 
+            // rjButton_Book
+            // 
+            this.rjButton_Book.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
+            this.rjButton_Book.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
+            this.rjButton_Book.BorderColor = System.Drawing.Color.Transparent;
+            this.rjButton_Book.BorderRadius = 20;
+            this.rjButton_Book.BorderSize = 0;
+            this.rjButton_Book.FlatAppearance.BorderSize = 0;
+            this.rjButton_Book.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton_Book.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
+            this.rjButton_Book.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_Book.Location = new System.Drawing.Point(30, 400);
+            this.rjButton_Book.Name = "rjButton_Book";
+            this.rjButton_Book.Size = new System.Drawing.Size(149, 45);
+            this.rjButton_Book.TabIndex = 8;
+            this.rjButton_Book.Text = "Book your trip";
+            this.rjButton_Book.TextColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_Book.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rjButton_Book.UseVisualStyleBackColor = false;
+            // 
+            // rjButton_Flights
+            // 
+            this.rjButton_Flights.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
+            this.rjButton_Flights.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
+            this.rjButton_Flights.BorderColor = System.Drawing.Color.Transparent;
+            this.rjButton_Flights.BorderRadius = 20;
+            this.rjButton_Flights.BorderSize = 0;
+            this.rjButton_Flights.FlatAppearance.BorderSize = 0;
+            this.rjButton_Flights.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton_Flights.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
+            this.rjButton_Flights.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_Flights.Location = new System.Drawing.Point(30, 300);
+            this.rjButton_Flights.Name = "rjButton_Flights";
+            this.rjButton_Flights.Size = new System.Drawing.Size(149, 45);
+            this.rjButton_Flights.TabIndex = 7;
+            this.rjButton_Flights.Text = "Flights";
+            this.rjButton_Flights.TextColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_Flights.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rjButton_Flights.UseVisualStyleBackColor = false;
+            this.rjButton_Flights.Click += new System.EventHandler(this.rjButton_Flights_Click);
+            // 
+            // rjButton_Accomodations
+            // 
+            this.rjButton_Accomodations.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
+            this.rjButton_Accomodations.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
+            this.rjButton_Accomodations.BorderColor = System.Drawing.Color.Transparent;
+            this.rjButton_Accomodations.BorderRadius = 20;
+            this.rjButton_Accomodations.BorderSize = 0;
+            this.rjButton_Accomodations.FlatAppearance.BorderSize = 0;
+            this.rjButton_Accomodations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton_Accomodations.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
+            this.rjButton_Accomodations.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_Accomodations.Location = new System.Drawing.Point(30, 200);
+            this.rjButton_Accomodations.Name = "rjButton_Accomodations";
+            this.rjButton_Accomodations.Size = new System.Drawing.Size(149, 45);
+            this.rjButton_Accomodations.TabIndex = 6;
+            this.rjButton_Accomodations.Text = "Accomodations";
+            this.rjButton_Accomodations.TextColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_Accomodations.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rjButton_Accomodations.UseVisualStyleBackColor = false;
+            this.rjButton_Accomodations.Click += new System.EventHandler(this.rjButton_Accomodations_Click);
+            // 
+            // rjButton_Destinations
+            // 
+            this.rjButton_Destinations.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
+            this.rjButton_Destinations.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
+            this.rjButton_Destinations.BorderColor = System.Drawing.Color.Transparent;
+            this.rjButton_Destinations.BorderRadius = 20;
+            this.rjButton_Destinations.BorderSize = 0;
+            this.rjButton_Destinations.FlatAppearance.BorderSize = 0;
+            this.rjButton_Destinations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton_Destinations.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
+            this.rjButton_Destinations.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_Destinations.Location = new System.Drawing.Point(30, 100);
+            this.rjButton_Destinations.Name = "rjButton_Destinations";
+            this.rjButton_Destinations.Size = new System.Drawing.Size(149, 45);
+            this.rjButton_Destinations.TabIndex = 5;
+            this.rjButton_Destinations.Text = "Destinations";
+            this.rjButton_Destinations.TextColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_Destinations.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rjButton_Destinations.UseVisualStyleBackColor = false;
+            this.rjButton_Destinations.Click += new System.EventHandler(this.rjButton_Destinations_Click);
             // 
             // panel_Destinations
             // 
@@ -826,6 +1233,8 @@ namespace Proiect
             // panel_Flights
             // 
             this.panel_Flights.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(248)))), ((int)(((byte)(245)))));
+            this.panel_Flights.Controls.Add(this.panel_DisplayFlights);
+            this.panel_Flights.Controls.Add(this.comboBox_ShowCityFlights);
             this.panel_Flights.Controls.Add(this.label_Flights);
             this.panel_Flights.Location = new System.Drawing.Point(220, 0);
             this.panel_Flights.Name = "panel_Flights";
@@ -845,397 +1254,164 @@ namespace Proiect
             this.label_Flights.TabIndex = 1;
             this.label_Flights.Text = "Flights";
             // 
-            // rjButton_MyPlans
+            // comboBox_ShowCityFlights
             // 
-            this.rjButton_MyPlans.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
-            this.rjButton_MyPlans.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
-            this.rjButton_MyPlans.BorderColor = System.Drawing.Color.Transparent;
-            this.rjButton_MyPlans.BorderRadius = 20;
-            this.rjButton_MyPlans.BorderSize = 0;
-            this.rjButton_MyPlans.FlatAppearance.BorderSize = 0;
-            this.rjButton_MyPlans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton_MyPlans.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
-            this.rjButton_MyPlans.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_MyPlans.Location = new System.Drawing.Point(30, 500);
-            this.rjButton_MyPlans.Name = "rjButton_MyPlans";
-            this.rjButton_MyPlans.Size = new System.Drawing.Size(149, 45);
-            this.rjButton_MyPlans.TabIndex = 9;
-            this.rjButton_MyPlans.Text = "My Plans";
-            this.rjButton_MyPlans.TextColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_MyPlans.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.rjButton_MyPlans.UseVisualStyleBackColor = false;
+            this.comboBox_ShowCityFlights.BackColor = System.Drawing.Color.White;
+            this.comboBox_ShowCityFlights.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.comboBox_ShowCityFlights.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
+            this.comboBox_ShowCityFlights.FormattingEnabled = true;
+            this.comboBox_ShowCityFlights.Location = new System.Drawing.Point(6, 62);
+            this.comboBox_ShowCityFlights.Name = "comboBox_ShowCityFlights";
+            this.comboBox_ShowCityFlights.Size = new System.Drawing.Size(371, 29);
+            this.comboBox_ShowCityFlights.TabIndex = 4;
+            this.comboBox_ShowCityFlights.SelectedIndexChanged += new System.EventHandler(this.comboBox_ShowCityFlights_SelectedIndexChanged);
             // 
-            // rjButton_Book
+            // panel_DisplayFlights
             // 
-            this.rjButton_Book.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
-            this.rjButton_Book.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
-            this.rjButton_Book.BorderColor = System.Drawing.Color.Transparent;
-            this.rjButton_Book.BorderRadius = 20;
-            this.rjButton_Book.BorderSize = 0;
-            this.rjButton_Book.FlatAppearance.BorderSize = 0;
-            this.rjButton_Book.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton_Book.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
-            this.rjButton_Book.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_Book.Location = new System.Drawing.Point(30, 400);
-            this.rjButton_Book.Name = "rjButton_Book";
-            this.rjButton_Book.Size = new System.Drawing.Size(149, 45);
-            this.rjButton_Book.TabIndex = 8;
-            this.rjButton_Book.Text = "Book your trip";
-            this.rjButton_Book.TextColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_Book.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.rjButton_Book.UseVisualStyleBackColor = false;
+            this.panel_DisplayFlights.BackColor = System.Drawing.Color.Transparent;
+            this.panel_DisplayFlights.Controls.Add(this.label_displayAirport);
+            this.panel_DisplayFlights.Controls.Add(this.label6);
+            this.panel_DisplayFlights.Controls.Add(this.label);
+            this.panel_DisplayFlights.Controls.Add(this.label8);
+            this.panel_DisplayFlights.Controls.Add(this.label_FlightEnd);
+            this.panel_DisplayFlights.Controls.Add(this.label_FlightStart);
+            this.panel_DisplayFlights.Controls.Add(this.label_FlightPrice);
+            this.panel_DisplayFlights.Controls.Add(this.label13);
+            this.panel_DisplayFlights.Controls.Add(this.label_FlightDestination);
+            this.panel_DisplayFlights.Controls.Add(this.label15);
+            this.panel_DisplayFlights.Controls.Add(this.label16);
+            this.panel_DisplayFlights.Controls.Add(this.label17);
+            this.panel_DisplayFlights.Location = new System.Drawing.Point(151, 182);
+            this.panel_DisplayFlights.Name = "panel_DisplayFlights";
+            this.panel_DisplayFlights.Size = new System.Drawing.Size(644, 330);
+            this.panel_DisplayFlights.TabIndex = 5;
             // 
-            // rjButton_Flights
+            // label
             // 
-            this.rjButton_Flights.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
-            this.rjButton_Flights.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
-            this.rjButton_Flights.BorderColor = System.Drawing.Color.Transparent;
-            this.rjButton_Flights.BorderRadius = 20;
-            this.rjButton_Flights.BorderSize = 0;
-            this.rjButton_Flights.FlatAppearance.BorderSize = 0;
-            this.rjButton_Flights.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton_Flights.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
-            this.rjButton_Flights.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_Flights.Location = new System.Drawing.Point(30, 300);
-            this.rjButton_Flights.Name = "rjButton_Flights";
-            this.rjButton_Flights.Size = new System.Drawing.Size(149, 45);
-            this.rjButton_Flights.TabIndex = 7;
-            this.rjButton_Flights.Text = "Flights";
-            this.rjButton_Flights.TextColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_Flights.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.rjButton_Flights.UseVisualStyleBackColor = false;
-            this.rjButton_Flights.Click += new System.EventHandler(this.rjButton_Flights_Click);
+            this.label.AutoSize = true;
+            this.label.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 14F, System.Drawing.FontStyle.Bold);
+            this.label.Location = new System.Drawing.Point(244, 269);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(24, 28);
+            this.label.TabIndex = 11;
+            this.label.Text = "€";
             // 
-            // rjButton_Accomodations
+            // label8
             // 
-            this.rjButton_Accomodations.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
-            this.rjButton_Accomodations.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
-            this.rjButton_Accomodations.BorderColor = System.Drawing.Color.Transparent;
-            this.rjButton_Accomodations.BorderRadius = 20;
-            this.rjButton_Accomodations.BorderSize = 0;
-            this.rjButton_Accomodations.FlatAppearance.BorderSize = 0;
-            this.rjButton_Accomodations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton_Accomodations.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
-            this.rjButton_Accomodations.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_Accomodations.Location = new System.Drawing.Point(30, 200);
-            this.rjButton_Accomodations.Name = "rjButton_Accomodations";
-            this.rjButton_Accomodations.Size = new System.Drawing.Size(149, 45);
-            this.rjButton_Accomodations.TabIndex = 6;
-            this.rjButton_Accomodations.Text = "Accomodations";
-            this.rjButton_Accomodations.TextColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_Accomodations.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.rjButton_Accomodations.UseVisualStyleBackColor = false;
-            this.rjButton_Accomodations.Click += new System.EventHandler(this.rjButton_Accomodations_Click);
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
+            this.label8.Location = new System.Drawing.Point(344, 176);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(35, 21);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "and";
             // 
-            // rjButton_Destinations
+            // label_FlightEnd
             // 
-            this.rjButton_Destinations.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
-            this.rjButton_Destinations.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
-            this.rjButton_Destinations.BorderColor = System.Drawing.Color.Transparent;
-            this.rjButton_Destinations.BorderRadius = 20;
-            this.rjButton_Destinations.BorderSize = 0;
-            this.rjButton_Destinations.FlatAppearance.BorderSize = 0;
-            this.rjButton_Destinations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton_Destinations.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
-            this.rjButton_Destinations.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_Destinations.Location = new System.Drawing.Point(30, 100);
-            this.rjButton_Destinations.Name = "rjButton_Destinations";
-            this.rjButton_Destinations.Size = new System.Drawing.Size(149, 45);
-            this.rjButton_Destinations.TabIndex = 5;
-            this.rjButton_Destinations.Text = "Destinations";
-            this.rjButton_Destinations.TextColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_Destinations.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.rjButton_Destinations.UseVisualStyleBackColor = false;
-            this.rjButton_Destinations.Click += new System.EventHandler(this.rjButton_Destinations_Click);
+            this.label_FlightEnd.AutoSize = true;
+            this.label_FlightEnd.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 14F, System.Drawing.FontStyle.Bold);
+            this.label_FlightEnd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
+            this.label_FlightEnd.Location = new System.Drawing.Point(380, 170);
+            this.label_FlightEnd.Name = "label_FlightEnd";
+            this.label_FlightEnd.Size = new System.Drawing.Size(119, 28);
+            this.label_FlightEnd.TabIndex = 9;
+            this.label_FlightEnd.Text = "display end";
             // 
-            // rjButton_Logout
+            // label_FlightStart
             // 
-            this.rjButton_Logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
-            this.rjButton_Logout.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
-            this.rjButton_Logout.BorderColor = System.Drawing.Color.Transparent;
-            this.rjButton_Logout.BorderRadius = 20;
-            this.rjButton_Logout.BorderSize = 0;
-            this.rjButton_Logout.FlatAppearance.BorderSize = 0;
-            this.rjButton_Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton_Logout.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
-            this.rjButton_Logout.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_Logout.Image = global::Proiect.Properties.Resources.sign_out_alt_free_icon_font;
-            this.rjButton_Logout.Location = new System.Drawing.Point(30, 550);
-            this.rjButton_Logout.Name = "rjButton_Logout";
-            this.rjButton_Logout.Size = new System.Drawing.Size(149, 45);
-            this.rjButton_Logout.TabIndex = 4;
-            this.rjButton_Logout.Text = "  Logout";
-            this.rjButton_Logout.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.rjButton_Logout.TextColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_Logout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.rjButton_Logout.UseVisualStyleBackColor = false;
-            this.rjButton_Logout.Click += new System.EventHandler(this.rjButton_Logout_Click);
-            this.rjButton_Logout.MouseLeave += new System.EventHandler(this.rjButton_Logout_MouseLeave);
-            this.rjButton_Logout.MouseHover += new System.EventHandler(this.rjButton_Logout_MouseHover);
+            this.label_FlightStart.AutoSize = true;
+            this.label_FlightStart.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 14F, System.Drawing.FontStyle.Bold);
+            this.label_FlightStart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
+            this.label_FlightStart.Location = new System.Drawing.Point(115, 170);
+            this.label_FlightStart.Name = "label_FlightStart";
+            this.label_FlightStart.Size = new System.Drawing.Size(129, 28);
+            this.label_FlightStart.TabIndex = 8;
+            this.label_FlightStart.Text = "display start";
             // 
-            // rjButton_Account
+            // label_FlightPrice
             // 
-            this.rjButton_Account.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
-            this.rjButton_Account.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
-            this.rjButton_Account.BorderColor = System.Drawing.Color.Transparent;
-            this.rjButton_Account.BorderRadius = 20;
-            this.rjButton_Account.BorderSize = 0;
-            this.rjButton_Account.FlatAppearance.BorderSize = 0;
-            this.rjButton_Account.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton_Account.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
-            this.rjButton_Account.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_Account.Image = global::Proiect.Properties.Resources.user_free_icon_font;
-            this.rjButton_Account.Location = new System.Drawing.Point(30, 200);
-            this.rjButton_Account.Name = "rjButton_Account";
-            this.rjButton_Account.Size = new System.Drawing.Size(149, 45);
-            this.rjButton_Account.TabIndex = 3;
-            this.rjButton_Account.Text = " My Account";
-            this.rjButton_Account.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.rjButton_Account.TextColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_Account.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.rjButton_Account.UseVisualStyleBackColor = false;
-            this.rjButton_Account.Click += new System.EventHandler(this.rjButton_Account_Click);
-            this.rjButton_Account.MouseLeave += new System.EventHandler(this.rjButton_Account_MouseLeave);
-            this.rjButton_Account.MouseHover += new System.EventHandler(this.rjButton_Account_MouseHover);
+            this.label_FlightPrice.AutoSize = true;
+            this.label_FlightPrice.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 14F, System.Drawing.FontStyle.Bold);
+            this.label_FlightPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
+            this.label_FlightPrice.Location = new System.Drawing.Point(212, 269);
+            this.label_FlightPrice.Name = "label_FlightPrice";
+            this.label_FlightPrice.Size = new System.Drawing.Size(132, 28);
+            this.label_FlightPrice.TabIndex = 6;
+            this.label_FlightPrice.Text = "display price";
             // 
-            // rjButton_Settings
+            // label13
             // 
-            this.rjButton_Settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
-            this.rjButton_Settings.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
-            this.rjButton_Settings.BorderColor = System.Drawing.Color.Transparent;
-            this.rjButton_Settings.BorderRadius = 20;
-            this.rjButton_Settings.BorderSize = 0;
-            this.rjButton_Settings.FlatAppearance.BorderSize = 0;
-            this.rjButton_Settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton_Settings.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
-            this.rjButton_Settings.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_Settings.Image = global::Proiect.Properties.Resources.settings_free_icon_font;
-            this.rjButton_Settings.Location = new System.Drawing.Point(30, 500);
-            this.rjButton_Settings.Name = "rjButton_Settings";
-            this.rjButton_Settings.Size = new System.Drawing.Size(149, 45);
-            this.rjButton_Settings.TabIndex = 2;
-            this.rjButton_Settings.Text = "  Settings";
-            this.rjButton_Settings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.rjButton_Settings.TextColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_Settings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.rjButton_Settings.UseVisualStyleBackColor = false;
-            this.rjButton_Settings.Click += new System.EventHandler(this.rjButton_Settings_Click);
-            this.rjButton_Settings.MouseLeave += new System.EventHandler(this.rjButton_Settings_MouseLeave);
-            this.rjButton_Settings.MouseHover += new System.EventHandler(this.rjButton_Settings_MouseHover);
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 14F, System.Drawing.FontStyle.Bold);
+            this.label13.Location = new System.Drawing.Point(20, 125);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(312, 28);
+            this.label13.TabIndex = 4;
+            this.label13.Text = "Flight departure and return date:";
             // 
-            // rjButton_Dashboard
+            // label_FlightDestination
             // 
-            this.rjButton_Dashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
-            this.rjButton_Dashboard.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
-            this.rjButton_Dashboard.BorderColor = System.Drawing.Color.Transparent;
-            this.rjButton_Dashboard.BorderRadius = 20;
-            this.rjButton_Dashboard.BorderSize = 0;
-            this.rjButton_Dashboard.FlatAppearance.BorderSize = 0;
-            this.rjButton_Dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton_Dashboard.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
-            this.rjButton_Dashboard.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_Dashboard.Image = global::Proiect.Properties.Resources.map_marker_home_free_icon_font;
-            this.rjButton_Dashboard.Location = new System.Drawing.Point(30, 100);
-            this.rjButton_Dashboard.Name = "rjButton_Dashboard";
-            this.rjButton_Dashboard.Size = new System.Drawing.Size(149, 45);
-            this.rjButton_Dashboard.TabIndex = 1;
-            this.rjButton_Dashboard.Text = "  Dashboard";
-            this.rjButton_Dashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.rjButton_Dashboard.TextColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_Dashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.rjButton_Dashboard.UseVisualStyleBackColor = false;
-            this.rjButton_Dashboard.Click += new System.EventHandler(this.rjButton_Dashboard_Click);
-            this.rjButton_Dashboard.MouseLeave += new System.EventHandler(this.rjButton_Dashboard_MouseLeave);
-            this.rjButton_Dashboard.MouseHover += new System.EventHandler(this.rjButton_Dashboard_MouseHover);
+            this.label_FlightDestination.AutoSize = true;
+            this.label_FlightDestination.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 16F, System.Drawing.FontStyle.Bold);
+            this.label_FlightDestination.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
+            this.label_FlightDestination.Location = new System.Drawing.Point(211, 22);
+            this.label_FlightDestination.Name = "label_FlightDestination";
+            this.label_FlightDestination.Size = new System.Drawing.Size(144, 32);
+            this.label_FlightDestination.TabIndex = 3;
+            this.label_FlightDestination.Text = "display dest";
+            this.label_FlightDestination.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // rjButton_ChangeContactInfo
+            // label15
             // 
-            this.rjButton_ChangeContactInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
-            this.rjButton_ChangeContactInfo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
-            this.rjButton_ChangeContactInfo.BorderColor = System.Drawing.Color.Transparent;
-            this.rjButton_ChangeContactInfo.BorderRadius = 20;
-            this.rjButton_ChangeContactInfo.BorderSize = 0;
-            this.rjButton_ChangeContactInfo.FlatAppearance.BorderSize = 0;
-            this.rjButton_ChangeContactInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton_ChangeContactInfo.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
-            this.rjButton_ChangeContactInfo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_ChangeContactInfo.Location = new System.Drawing.Point(34, 207);
-            this.rjButton_ChangeContactInfo.Name = "rjButton_ChangeContactInfo";
-            this.rjButton_ChangeContactInfo.Size = new System.Drawing.Size(296, 47);
-            this.rjButton_ChangeContactInfo.TabIndex = 10;
-            this.rjButton_ChangeContactInfo.Text = "Contact info";
-            this.rjButton_ChangeContactInfo.TextColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_ChangeContactInfo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.rjButton_ChangeContactInfo.UseVisualStyleBackColor = false;
-            this.rjButton_ChangeContactInfo.Click += new System.EventHandler(this.rjButton_ChangeContactInfo_Click);
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 18F, System.Drawing.FontStyle.Bold);
+            this.label15.Location = new System.Drawing.Point(19, 73);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(259, 36);
+            this.label15.TabIndex = 2;
+            this.label15.Text = "We have a great deal:";
             // 
-            // rjButton_changeName
+            // label16
             // 
-            this.rjButton_changeName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
-            this.rjButton_changeName.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
-            this.rjButton_changeName.BorderColor = System.Drawing.Color.Transparent;
-            this.rjButton_changeName.BorderRadius = 20;
-            this.rjButton_changeName.BorderSize = 0;
-            this.rjButton_changeName.FlatAppearance.BorderSize = 0;
-            this.rjButton_changeName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton_changeName.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
-            this.rjButton_changeName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_changeName.Location = new System.Drawing.Point(34, 157);
-            this.rjButton_changeName.Name = "rjButton_changeName";
-            this.rjButton_changeName.Size = new System.Drawing.Size(296, 47);
-            this.rjButton_changeName.TabIndex = 9;
-            this.rjButton_changeName.Text = "Change name";
-            this.rjButton_changeName.TextColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_changeName.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.rjButton_changeName.UseVisualStyleBackColor = false;
-            this.rjButton_changeName.Click += new System.EventHandler(this.rjButton_changeName_Click);
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 14F, System.Drawing.FontStyle.Bold);
+            this.label16.Location = new System.Drawing.Point(20, 25);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(192, 28);
+            this.label16.TabIndex = 1;
+            this.label16.Text = "For the destination:";
             // 
-            // rjButton_DeleteAccount
+            // label17
             // 
-            this.rjButton_DeleteAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
-            this.rjButton_DeleteAccount.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
-            this.rjButton_DeleteAccount.BorderColor = System.Drawing.Color.Transparent;
-            this.rjButton_DeleteAccount.BorderRadius = 20;
-            this.rjButton_DeleteAccount.BorderSize = 0;
-            this.rjButton_DeleteAccount.FlatAppearance.BorderSize = 0;
-            this.rjButton_DeleteAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton_DeleteAccount.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
-            this.rjButton_DeleteAccount.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_DeleteAccount.Location = new System.Drawing.Point(34, 482);
-            this.rjButton_DeleteAccount.Name = "rjButton_DeleteAccount";
-            this.rjButton_DeleteAccount.Size = new System.Drawing.Size(296, 47);
-            this.rjButton_DeleteAccount.TabIndex = 8;
-            this.rjButton_DeleteAccount.Text = "Delete Account";
-            this.rjButton_DeleteAccount.TextColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_DeleteAccount.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.rjButton_DeleteAccount.UseVisualStyleBackColor = false;
-            this.rjButton_DeleteAccount.Click += new System.EventHandler(this.rjButton_DeleteAccount_Click);
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 14F, System.Drawing.FontStyle.Bold);
+            this.label17.Location = new System.Drawing.Point(21, 269);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(195, 28);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "With the total price:";
             // 
-            // rjButton_ChangePassword
+            // label6
             // 
-            this.rjButton_ChangePassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
-            this.rjButton_ChangePassword.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
-            this.rjButton_ChangePassword.BorderColor = System.Drawing.Color.Transparent;
-            this.rjButton_ChangePassword.BorderRadius = 20;
-            this.rjButton_ChangePassword.BorderSize = 0;
-            this.rjButton_ChangePassword.FlatAppearance.BorderSize = 0;
-            this.rjButton_ChangePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton_ChangePassword.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
-            this.rjButton_ChangePassword.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_ChangePassword.Location = new System.Drawing.Point(34, 432);
-            this.rjButton_ChangePassword.Name = "rjButton_ChangePassword";
-            this.rjButton_ChangePassword.Size = new System.Drawing.Size(296, 47);
-            this.rjButton_ChangePassword.TabIndex = 6;
-            this.rjButton_ChangePassword.Text = "Change Password";
-            this.rjButton_ChangePassword.TextColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_ChangePassword.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.rjButton_ChangePassword.UseVisualStyleBackColor = false;
-            this.rjButton_ChangePassword.Click += new System.EventHandler(this.rjButton_ChangePassword_Click);
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 14F, System.Drawing.FontStyle.Bold);
+            this.label6.Location = new System.Drawing.Point(21, 228);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(132, 28);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "From Airport:";
             // 
-            // rjButton_ChangeUsername
+            // label_displayAirport
             // 
-            this.rjButton_ChangeUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
-            this.rjButton_ChangeUsername.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
-            this.rjButton_ChangeUsername.BorderColor = System.Drawing.Color.Transparent;
-            this.rjButton_ChangeUsername.BorderRadius = 20;
-            this.rjButton_ChangeUsername.BorderSize = 0;
-            this.rjButton_ChangeUsername.FlatAppearance.BorderSize = 0;
-            this.rjButton_ChangeUsername.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton_ChangeUsername.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
-            this.rjButton_ChangeUsername.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_ChangeUsername.Location = new System.Drawing.Point(34, 382);
-            this.rjButton_ChangeUsername.Name = "rjButton_ChangeUsername";
-            this.rjButton_ChangeUsername.Size = new System.Drawing.Size(296, 47);
-            this.rjButton_ChangeUsername.TabIndex = 5;
-            this.rjButton_ChangeUsername.Text = "Change Username";
-            this.rjButton_ChangeUsername.TextColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_ChangeUsername.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.rjButton_ChangeUsername.UseVisualStyleBackColor = false;
-            this.rjButton_ChangeUsername.Click += new System.EventHandler(this.rjButton_ChangeUsername_Click);
-            // 
-            // rjButton_SaveName
-            // 
-            this.rjButton_SaveName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
-            this.rjButton_SaveName.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
-            this.rjButton_SaveName.BorderColor = System.Drawing.Color.Transparent;
-            this.rjButton_SaveName.BorderRadius = 20;
-            this.rjButton_SaveName.BorderSize = 0;
-            this.rjButton_SaveName.FlatAppearance.BorderSize = 0;
-            this.rjButton_SaveName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton_SaveName.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
-            this.rjButton_SaveName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_SaveName.Location = new System.Drawing.Point(27, 221);
-            this.rjButton_SaveName.Name = "rjButton_SaveName";
-            this.rjButton_SaveName.Size = new System.Drawing.Size(96, 47);
-            this.rjButton_SaveName.TabIndex = 19;
-            this.rjButton_SaveName.Text = "Save";
-            this.rjButton_SaveName.TextColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_SaveName.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.rjButton_SaveName.UseVisualStyleBackColor = false;
-            this.rjButton_SaveName.Click += new System.EventHandler(this.rjButton_SaveName_Click);
-            // 
-            // rjButton_SaveDeletedAccount
-            // 
-            this.rjButton_SaveDeletedAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
-            this.rjButton_SaveDeletedAccount.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
-            this.rjButton_SaveDeletedAccount.BorderColor = System.Drawing.Color.Transparent;
-            this.rjButton_SaveDeletedAccount.BorderRadius = 20;
-            this.rjButton_SaveDeletedAccount.BorderSize = 0;
-            this.rjButton_SaveDeletedAccount.FlatAppearance.BorderSize = 0;
-            this.rjButton_SaveDeletedAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton_SaveDeletedAccount.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
-            this.rjButton_SaveDeletedAccount.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_SaveDeletedAccount.Location = new System.Drawing.Point(27, 219);
-            this.rjButton_SaveDeletedAccount.Name = "rjButton_SaveDeletedAccount";
-            this.rjButton_SaveDeletedAccount.Size = new System.Drawing.Size(96, 47);
-            this.rjButton_SaveDeletedAccount.TabIndex = 24;
-            this.rjButton_SaveDeletedAccount.Text = "Delete";
-            this.rjButton_SaveDeletedAccount.TextColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_SaveDeletedAccount.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.rjButton_SaveDeletedAccount.UseVisualStyleBackColor = false;
-            this.rjButton_SaveDeletedAccount.Click += new System.EventHandler(this.rjButton_SaveDeletedAccount_Click);
-            // 
-            // rjButton_SaveNewPassword
-            // 
-            this.rjButton_SaveNewPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
-            this.rjButton_SaveNewPassword.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
-            this.rjButton_SaveNewPassword.BorderColor = System.Drawing.Color.Transparent;
-            this.rjButton_SaveNewPassword.BorderRadius = 20;
-            this.rjButton_SaveNewPassword.BorderSize = 0;
-            this.rjButton_SaveNewPassword.FlatAppearance.BorderSize = 0;
-            this.rjButton_SaveNewPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton_SaveNewPassword.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
-            this.rjButton_SaveNewPassword.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_SaveNewPassword.Location = new System.Drawing.Point(27, 219);
-            this.rjButton_SaveNewPassword.Name = "rjButton_SaveNewPassword";
-            this.rjButton_SaveNewPassword.Size = new System.Drawing.Size(96, 47);
-            this.rjButton_SaveNewPassword.TabIndex = 24;
-            this.rjButton_SaveNewPassword.Text = "Save";
-            this.rjButton_SaveNewPassword.TextColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_SaveNewPassword.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.rjButton_SaveNewPassword.UseVisualStyleBackColor = false;
-            this.rjButton_SaveNewPassword.Click += new System.EventHandler(this.rjButton_SaveNewPassword_Click);
-            // 
-            // rjButton_SaveNewUsername
-            // 
-            this.rjButton_SaveNewUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
-            this.rjButton_SaveNewUsername.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
-            this.rjButton_SaveNewUsername.BorderColor = System.Drawing.Color.Transparent;
-            this.rjButton_SaveNewUsername.BorderRadius = 20;
-            this.rjButton_SaveNewUsername.BorderSize = 0;
-            this.rjButton_SaveNewUsername.FlatAppearance.BorderSize = 0;
-            this.rjButton_SaveNewUsername.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton_SaveNewUsername.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
-            this.rjButton_SaveNewUsername.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_SaveNewUsername.Location = new System.Drawing.Point(27, 219);
-            this.rjButton_SaveNewUsername.Name = "rjButton_SaveNewUsername";
-            this.rjButton_SaveNewUsername.Size = new System.Drawing.Size(96, 47);
-            this.rjButton_SaveNewUsername.TabIndex = 29;
-            this.rjButton_SaveNewUsername.Text = "Save";
-            this.rjButton_SaveNewUsername.TextColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_SaveNewUsername.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.rjButton_SaveNewUsername.UseVisualStyleBackColor = false;
-            this.rjButton_SaveNewUsername.Click += new System.EventHandler(this.rjButton_SaveNewUsername_Click);
+            this.label_displayAirport.AutoSize = true;
+            this.label_displayAirport.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 14F, System.Drawing.FontStyle.Bold);
+            this.label_displayAirport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(194)))), ((int)(((byte)(139)))));
+            this.label_displayAirport.Location = new System.Drawing.Point(167, 228);
+            this.label_displayAirport.Name = "label_displayAirport";
+            this.label_displayAirport.Size = new System.Drawing.Size(77, 28);
+            this.label_displayAirport.TabIndex = 13;
+            this.label_displayAirport.Text = "airport";
+            this.label_displayAirport.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MenuForm
             // 
@@ -1244,12 +1420,12 @@ namespace Proiect
             this.ClientSize = new System.Drawing.Size(1502, 768);
             this.Controls.Add(this.panel_Right);
             this.Controls.Add(this.panel_Left);
-            this.Controls.Add(this.panel_Settings);
-            this.Controls.Add(this.panel_Account);
             this.Controls.Add(this.panel_Flights);
             this.Controls.Add(this.panel_Accomodation);
             this.Controls.Add(this.panel_Destinations);
             this.Controls.Add(this.panel_Dashboard);
+            this.Controls.Add(this.panel_Settings);
+            this.Controls.Add(this.panel_Account);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MenuForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1282,6 +1458,8 @@ namespace Proiect
             this.panel_Offers.PerformLayout();
             this.panel_Flights.ResumeLayout(false);
             this.panel_Flights.PerformLayout();
+            this.panel_DisplayFlights.ResumeLayout(false);
+            this.panel_DisplayFlights.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1365,5 +1543,19 @@ namespace Proiect
         private System.Windows.Forms.Label label_StartDate;
         private System.Windows.Forms.Label label_DisplayPrice;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel panel_DisplayFlights;
+        private System.Windows.Forms.Label label;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label_FlightEnd;
+        private System.Windows.Forms.Label label_FlightStart;
+        private System.Windows.Forms.Label label_FlightPrice;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label_FlightDestination;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.ComboBox comboBox_ShowCityFlights;
+        private System.Windows.Forms.Label label_displayAirport;
+        private System.Windows.Forms.Label label6;
     }
 }
