@@ -18,6 +18,8 @@ namespace Proiect
         public RegisterForm()
         {
             InitializeComponent();
+            textBox_newPassword.UseSystemPasswordChar = true;
+            textBox_PasswordCheck.UseSystemPasswordChar = true;
         }
 
         private void rjButton_LoginPage_Click(object sender, EventArgs e)
@@ -91,6 +93,7 @@ namespace Proiect
                                 Account.password = password;
                                 Account.FirstName = "";
                                 Account.LastName = "";
+                                Account.userid = dt.Rows[0]["User_id"].ToString();
                                 Program.OpenDetailFormMenu = true ;
                                 this.Close();
                                
@@ -116,6 +119,18 @@ namespace Proiect
 
         }
 
-        
+        private void rjButton_HiddenPass_MouseDown(object sender, MouseEventArgs e)
+        {
+            textBox_newPassword.UseSystemPasswordChar = false;
+            textBox_PasswordCheck.UseSystemPasswordChar = false;
+
+        }
+
+        private void rjButton_HiddenPass_MouseUp(object sender, MouseEventArgs e)
+        {
+            textBox_newPassword.UseSystemPasswordChar = true;
+            textBox_PasswordCheck.UseSystemPasswordChar = true;
+
+        }
     }
 }

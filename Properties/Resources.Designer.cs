@@ -103,6 +103,36 @@ namespace Proiect.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap exploreflights {
+            get {
+                object obj = ResourceManager.GetObject("exploreflights", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap eyepass {
+            get {
+                object obj = ResourceManager.GetObject("eyepass", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap eyepassnew {
+            get {
+                object obj = ResourceManager.GetObject("eyepassnew", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap heart_free_icon_font {
             get {
                 object obj = ResourceManager.GetObject("heart_free_icon_font", resourceCulture);
@@ -176,6 +206,16 @@ namespace Proiect.Properties {
         internal static System.Drawing.Bitmap login2 {
             get {
                 object obj = ResourceManager.GetObject("login2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mainpage {
+            get {
+                object obj = ResourceManager.GetObject("mainpage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

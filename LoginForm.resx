@@ -121,10 +121,47 @@
   <data name="panelRightLogin.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="rjButton_ExitLogin.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="rjButton_HiddenPass.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="rjButton_HiddenPass.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="rjButton_HiddenPass.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Fira Sans Extra Condensed Black, 10pt, style=Bold</value>
+  </data>
+  <data name="rjButton_HiddenPass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>316, 199</value>
+  </data>
+  <data name="rjButton_HiddenPass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="rjButton_HiddenPass.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="rjButton_HiddenPass.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="rjButton_HiddenPass.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;rjButton_HiddenPass.Name" xml:space="preserve">
+    <value>rjButton_HiddenPass</value>
+  </data>
+  <data name="&gt;&gt;rjButton_HiddenPass.Type" xml:space="preserve">
+    <value>Proiect.RJControls.RJButton, Proiect, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;rjButton_HiddenPass.Parent" xml:space="preserve">
+    <value>panelRightLogin</value>
+  </data>
+  <data name="&gt;&gt;rjButton_HiddenPass.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="rjButton_ExitLogin.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
   <data name="rjButton_ExitLogin.Font" type="System.Drawing.Font, System.Drawing">
     <value>Fira Sans Extra Condensed Black, 10pt, style=Bold</value>
   </data>
@@ -134,7 +171,6 @@
   <data name="rjButton_ExitLogin.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 52</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="rjButton_ExitLogin.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
@@ -151,7 +187,7 @@
     <value>panelRightLogin</value>
   </data>
   <data name="&gt;&gt;rjButton_ExitLogin.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="rjButton_RegisterPage.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -184,7 +220,7 @@
     <value>panelRightLogin</value>
   </data>
   <data name="&gt;&gt;rjButton_RegisterPage.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -220,7 +256,7 @@
     <value>panelRightLogin</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -256,7 +292,7 @@
     <value>panelRightLogin</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="rjButton_Login.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -289,7 +325,7 @@
     <value>panelRightLogin</value>
   </data>
   <data name="&gt;&gt;rjButton_Login.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -325,7 +361,7 @@
     <value>panelRightLogin</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -355,7 +391,7 @@
     <value>panelRightLogin</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="textBox_Password.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Fax, 12pt</value>
@@ -365,9 +401,6 @@
   </data>
   <data name="textBox_Password.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
-  </data>
-  <data name="textBox_Password.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
-    <value>*</value>
   </data>
   <data name="textBox_Password.Size" type="System.Drawing.Size, System.Drawing">
     <value>236, 24</value>
@@ -385,7 +418,7 @@
     <value>panelRightLogin</value>
   </data>
   <data name="&gt;&gt;textBox_Password.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="textBox_Username.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Fax, 12pt</value>
@@ -412,7 +445,7 @@
     <value>panelRightLogin</value>
   </data>
   <data name="&gt;&gt;textBox_Username.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -445,7 +478,7 @@
     <value>panelRightLogin</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -478,7 +511,7 @@
     <value>panelRightLogin</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="panelRightLogin.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>

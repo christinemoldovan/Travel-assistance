@@ -13,5 +13,7 @@ namespace Proiect
         public static string password { get; internal set; }
         public static string FirstName { get; internal set; }
         public static string LastName { get; internal set; }
+        public static string userid { get; internal set; }
+
     }
 }

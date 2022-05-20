@@ -30,14 +30,9 @@ namespace Proiect
             }
             sqlConnection.Close();
 
-        }
+            textBox_Password.UseSystemPasswordChar = true;
 
-
-        private void LoginForm_Load(object sender, EventArgs e)
-        {
-          
         }
-        
 
         private void rjButton_RegisterPage_Click(object sender, EventArgs e)
         {
@@ -62,7 +57,7 @@ namespace Proiect
             String queryLogin = "SELECT * FROM Users WHERE UserName=@username AND Password=@password COLLATE SQL_Latin1_General_CP1_CS_AS ";
             try
             {
-               
+
 
                 SqlCommand cmd = new SqlCommand(queryLogin, sqlConnection);
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
@@ -73,19 +68,20 @@ namespace Proiect
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
                 sqlConnection.Open();
-                int i = cmd.ExecuteNonQuery();
-               
+                cmd.ExecuteNonQuery();
+
                 if (dt.Rows.Count > 0)
                 {
-                    
+
                     Account.username = username;
                     Account.password = password;
                     //asta sa luam mai usor first/last
                     Account.FirstName = dt.Rows[0]["FirstName"].ToString();
                     Account.LastName = dt.Rows[0]["LastName"].ToString();
+                    Account.userid = dt.Rows[0]["User_id"].ToString();
                     Program.OpenDetailFormMenu = true;
                     this.Close();
-                    
+
                 }
                 else
                 {
@@ -94,15 +90,21 @@ namespace Proiect
                 }
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
                 Console.WriteLine(ex.Message);
             }
             sqlConnection.Close();
-
         }
 
-        
+        private void rjButton_HiddenPass_MouseDown(object sender, MouseEventArgs e)
+        {
+            textBox_Password.UseSystemPasswordChar = false;
+        }
+        private void rjButton_HiddenPass_MouseUp(object sender, MouseEventArgs e)
+        {
+            textBox_Password.UseSystemPasswordChar = true;
+        }
     }
 }

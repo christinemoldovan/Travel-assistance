@@ -60,6 +60,7 @@ namespace Proiect
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
+            this.rjButton_HiddenPass = new Proiect.RJControls.RJButton();
             this.panelLeftLogin.SuspendLayout();
             this.panelRightLogin.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -121,6 +122,7 @@ namespace Proiect
             // 
             this.panel1.BackColor = System.Drawing.Color.GhostWhite;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel1.Controls.Add(this.rjButton_HiddenPass);
             this.panel1.Controls.Add(this.rjButton_ExitRegister);
             this.panel1.Controls.Add(this.rjButton_LoginPage);
             this.panel1.Controls.Add(this.rjButton_CreateAccount);
@@ -250,7 +252,6 @@ namespace Proiect
             this.textBox_PasswordCheck.Location = new System.Drawing.Point(74, 251);
             this.textBox_PasswordCheck.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_PasswordCheck.Name = "textBox_PasswordCheck";
-            this.textBox_PasswordCheck.PasswordChar = '*';
             this.textBox_PasswordCheck.Size = new System.Drawing.Size(236, 24);
             this.textBox_PasswordCheck.TabIndex = 7;
             // 
@@ -263,7 +264,6 @@ namespace Proiect
             this.textBox_newPassword.Location = new System.Drawing.Point(74, 201);
             this.textBox_newPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_newPassword.Name = "textBox_newPassword";
-            this.textBox_newPassword.PasswordChar = '*';
             this.textBox_newPassword.Size = new System.Drawing.Size(236, 24);
             this.textBox_newPassword.TabIndex = 6;
             // 
@@ -492,8 +492,34 @@ namespace Proiect
             this.label2.TabIndex = 1;
             this.label2.Text = "Username:";
             // 
+            // rjButton_HiddenPass
+            // 
+            this.rjButton_HiddenPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(203)))), ((int)(((byte)(233)))));
+            this.rjButton_HiddenPass.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(203)))), ((int)(((byte)(233)))));
+            this.rjButton_HiddenPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rjButton_HiddenPass.BorderColor = System.Drawing.Color.Transparent;
+            this.rjButton_HiddenPass.BorderRadius = 10;
+            this.rjButton_HiddenPass.BorderSize = 0;
+            this.rjButton_HiddenPass.FlatAppearance.BorderSize = 0;
+            this.rjButton_HiddenPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton_HiddenPass.Font = new System.Drawing.Font("Fira Sans Extra Condensed Black", 10F, System.Drawing.FontStyle.Bold);
+            this.rjButton_HiddenPass.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_HiddenPass.Image = global::Proiect.Properties.Resources.eyepassnew;
+            this.rjButton_HiddenPass.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.rjButton_HiddenPass.Location = new System.Drawing.Point(316, 199);
+            this.rjButton_HiddenPass.Name = "rjButton_HiddenPass";
+            this.rjButton_HiddenPass.Size = new System.Drawing.Size(30, 30);
+            this.rjButton_HiddenPass.TabIndex = 22;
+            this.rjButton_HiddenPass.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.rjButton_HiddenPass.TextColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_HiddenPass.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rjButton_HiddenPass.UseVisualStyleBackColor = false;
+            this.rjButton_HiddenPass.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rjButton_HiddenPass_MouseDown);
+            this.rjButton_HiddenPass.MouseUp += new System.Windows.Forms.MouseEventHandler(this.rjButton_HiddenPass_MouseUp);
+            // 
             // RegisterForm
             // 
+            this.AcceptButton = this.rjButton_CreateAccount;
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(836, 484);
@@ -548,5 +574,6 @@ namespace Proiect
         private System.Windows.Forms.Label label14;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
         private RJControls.RJButton rjButton_ExitRegister;
+        private RJControls.RJButton rjButton_HiddenPass;
     }
 }

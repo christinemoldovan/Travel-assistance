@@ -31,6 +31,8 @@ namespace Proiect
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.panelRightLogin = new System.Windows.Forms.Panel();
+            this.rjButton_HiddenPass = new Proiect.RJControls.RJButton();
+            this.rjButton_ExitLogin = new Proiect.RJControls.RJButton();
             this.rjButton_RegisterPage = new Proiect.RJControls.RJButton();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -43,7 +45,6 @@ namespace Proiect
             this.label2 = new System.Windows.Forms.Label();
             this.panelLeftLogin = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.rjButton_ExitLogin = new Proiect.RJControls.RJButton();
             this.panelRightLogin.SuspendLayout();
             this.panelLeftLogin.SuspendLayout();
             this.SuspendLayout();
@@ -52,6 +53,7 @@ namespace Proiect
             // 
             this.panelRightLogin.BackColor = System.Drawing.Color.MintCream;
             resources.ApplyResources(this.panelRightLogin, "panelRightLogin");
+            this.panelRightLogin.Controls.Add(this.rjButton_HiddenPass);
             this.panelRightLogin.Controls.Add(this.rjButton_ExitLogin);
             this.panelRightLogin.Controls.Add(this.rjButton_RegisterPage);
             this.panelRightLogin.Controls.Add(this.label6);
@@ -65,6 +67,39 @@ namespace Proiect
             this.panelRightLogin.Controls.Add(this.label2);
             this.panelRightLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(93)))), ((int)(((byte)(119)))));
             this.panelRightLogin.Name = "panelRightLogin";
+            // 
+            // rjButton_HiddenPass
+            // 
+            this.rjButton_HiddenPass.BackColor = System.Drawing.Color.PaleGreen;
+            this.rjButton_HiddenPass.BackgroundColor = System.Drawing.Color.PaleGreen;
+            resources.ApplyResources(this.rjButton_HiddenPass, "rjButton_HiddenPass");
+            this.rjButton_HiddenPass.BorderColor = System.Drawing.Color.Transparent;
+            this.rjButton_HiddenPass.BorderRadius = 10;
+            this.rjButton_HiddenPass.BorderSize = 0;
+            this.rjButton_HiddenPass.FlatAppearance.BorderSize = 0;
+            this.rjButton_HiddenPass.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_HiddenPass.Image = global::Proiect.Properties.Resources.eyepassnew;
+            this.rjButton_HiddenPass.Name = "rjButton_HiddenPass";
+            this.rjButton_HiddenPass.TextColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_HiddenPass.UseVisualStyleBackColor = false;
+            this.rjButton_HiddenPass.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rjButton_HiddenPass_MouseDown);
+            this.rjButton_HiddenPass.MouseUp += new System.Windows.Forms.MouseEventHandler(this.rjButton_HiddenPass_MouseUp);
+            // 
+            // rjButton_ExitLogin
+            // 
+            this.rjButton_ExitLogin.BackColor = System.Drawing.Color.Gainsboro;
+            this.rjButton_ExitLogin.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.rjButton_ExitLogin.BorderColor = System.Drawing.Color.Transparent;
+            this.rjButton_ExitLogin.BorderRadius = 20;
+            this.rjButton_ExitLogin.BorderSize = 0;
+            this.rjButton_ExitLogin.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.rjButton_ExitLogin, "rjButton_ExitLogin");
+            this.rjButton_ExitLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_ExitLogin.Image = global::Proiect.Properties.Resources.sign_out_alt_free_icon_font;
+            this.rjButton_ExitLogin.Name = "rjButton_ExitLogin";
+            this.rjButton_ExitLogin.TextColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rjButton_ExitLogin.UseVisualStyleBackColor = false;
+            this.rjButton_ExitLogin.Click += new System.EventHandler(this.rjButton_ExitLogin_Click);
             // 
             // rjButton_RegisterPage
             // 
@@ -162,24 +197,9 @@ namespace Proiect
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(190)))), ((int)(((byte)(111)))));
             this.label1.Name = "label1";
             // 
-            // rjButton_ExitLogin
-            // 
-            this.rjButton_ExitLogin.BackColor = System.Drawing.Color.Gainsboro;
-            this.rjButton_ExitLogin.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.rjButton_ExitLogin.BorderColor = System.Drawing.Color.Transparent;
-            this.rjButton_ExitLogin.BorderRadius = 20;
-            this.rjButton_ExitLogin.BorderSize = 0;
-            this.rjButton_ExitLogin.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.rjButton_ExitLogin, "rjButton_ExitLogin");
-            this.rjButton_ExitLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_ExitLogin.Image = global::Proiect.Properties.Resources.sign_out_alt_free_icon_font;
-            this.rjButton_ExitLogin.Name = "rjButton_ExitLogin";
-            this.rjButton_ExitLogin.TextColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rjButton_ExitLogin.UseVisualStyleBackColor = false;
-            this.rjButton_ExitLogin.Click += new System.EventHandler(this.rjButton_ExitLogin_Click);
-            // 
             // LoginForm
             // 
+            this.AcceptButton = this.rjButton_Login;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ControlBox = false;
@@ -190,7 +210,6 @@ namespace Proiect
             this.MinimizeBox = false;
             this.Name = "LoginForm";
             this.ShowIcon = false;
-            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.panelRightLogin.ResumeLayout(false);
             this.panelRightLogin.PerformLayout();
             this.panelLeftLogin.ResumeLayout(false);
@@ -215,6 +234,7 @@ namespace Proiect
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private RJControls.RJButton rjButton_ExitLogin;
+        private RJControls.RJButton rjButton_HiddenPass;
     }
 }
 
